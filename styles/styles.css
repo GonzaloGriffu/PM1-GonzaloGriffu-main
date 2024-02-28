@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #9c262662;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(3, 3, 3, 0.747),rgba(0,0,0,0)),url(patron.png);
+}
+
+header:hover {
+    background-color: #ff0000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+section, .actividades {
+    background-color: #212121;
+    margin: 20px ;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(184, 13, 13);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover, .actividades:hover {
+    box-shadow: 0 0 25px rgb(255, 0, 0);
+}
+
+h2 {
+    color: #db3434a6;
+    border-bottom: 2px solid #db3434af;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+ul, .technology-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li, .technology-list li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #b9292985;
+}
+
+.technology-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.technology-list img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.actividades label {
+    color: #db3434a6;
+    margin-bottom: 5px;
+}
+
+.actividades input, .actividades textarea {
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.actividades input[type="text"], .actividades input[type="imgurl"], .actividades textarea {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.actividades input[type="text"], .actividades input[type="imgurl"] {
+    height: 30px;
+}
+
+.actividades textarea {
+    resize: vertical;
+}
+
+.actividades input[type="submit"] {
+    background-color: #9c2626;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actividades input[type="submit"]:hover {
+    background-color: #ff0000;
+}
+.card {
+    background-color: #212121;
+    color: #ffffff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(184, 13, 13);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+}
+
+.card h2,
+.card p {
+    margin: 5px 0;
+}
+
+
+footer {
+    background-color: #212121;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+}
