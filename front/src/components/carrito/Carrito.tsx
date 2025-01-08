@@ -16,7 +16,7 @@ const Carrito = () => {
   const [cartLS, setCartLS] = useState<IProduct[]>([]);
   const [total, setTotal] = useState<number>(0);
 
-  /* HARDCODEADO  const total = 4;*/
+
   useEffect(() => {
     const userSessionStr = localStorage.getItem("userSession");
     const cartStr = localStorage.getItem("cart");
@@ -84,7 +84,7 @@ const Carrito = () => {
   const handlePurchase = async () => {
     let products: number[] = [];
     try {
-      /* me falta mapear  hacer un array de numeros para la peticion */
+     
       cartLS.forEach((p: any) => {
         const parseP = JSON.parse(p);
         products.push(parseP.id);
@@ -158,9 +158,4 @@ const Carrito = () => {
 };
 export default Carrito;
 
-/* <CarritoProduct
-                id={product.id}
-                key={product.id}
-                {...product}
-                removeFromCart={() => removeFromCart(product.id)} // Pasar la función removeFromCart con el ID del producto como argumento
-              /> */
+

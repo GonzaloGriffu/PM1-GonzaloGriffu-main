@@ -1,5 +1,4 @@
 import Cards from "@/components/cards/Cards";
-import productToPreLoad from "../../utils/products";
 import { getProducts } from "../../../helpers/product.helper";
 
 const Home = async () => {

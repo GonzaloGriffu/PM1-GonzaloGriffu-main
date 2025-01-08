@@ -57,13 +57,7 @@ const DetailProduct = ({ params }: { params: { productId: string } }) => {
       /* orders.push(productToAdd); */
       cart?.push(productToAdd);
 
-      /*   const updatedToken = {
-        ...token,
-        userData: {
-          ...token.userData,
-          orders: orders,
-        },
-      }; */
+ 
 
       /*    localStorage.setItem("userSession", JSON.stringify(updatedToken)); */
       localStorage.setItem("cart", JSON.stringify(cartLS));

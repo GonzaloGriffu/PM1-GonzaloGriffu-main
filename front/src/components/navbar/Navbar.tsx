@@ -71,12 +71,7 @@ const Navbar: React.FC = () => {
         }`}
       >
         <div className="flex flex-col md:flex-row md:items-center md:justify-around text-center">
-          <Link href="/home/Smartphones">
-            <span className="text-white mb-2 md:mb-0 mr-4  hover:text-secondary transition duration-300">
-              Smartphones
-            </span>
-          </Link>
-
+        
           <Link href="/home/Laptops">
             <span className="text-white mb-2 md:mb-0 mr-4  hover:text-secondary transition duration-300">
               Laptops
@@ -94,23 +89,7 @@ const Navbar: React.FC = () => {
             </span>
           </Link>
 
-          <Link href="/home/Cameras">
-            <span className="text-white mb-2 md:mb-0 mr-4 hover:text-secondary transition duration-300">
-              Cameras
-            </span>
-          </Link>
 
-          <Link href="/home/Printers">
-            <span className="text-white mb-2 md:mb-0 mr-4 hover:text-secondary transition duration-300">
-              Printers
-            </span>
-          </Link>
-
-          <Link href="/home/Monitors">
-            <span className="text-white mb-2 md:mb-0 mr-4 hover:text-secondary transition duration-300">
-              Monitors
-            </span>
-          </Link>
           {login ? (
             <Link href="/login">
               <button
@@ -136,9 +115,12 @@ const Navbar: React.FC = () => {
           ) : (
             ""
           )}
-        </div>
+
+
+        </div>   
       </div>
     </div>
+
   );
 };
 

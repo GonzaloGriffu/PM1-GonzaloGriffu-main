@@ -1,5 +1,3 @@
-import { IProduct } from "@/types/types";
-import categoriesToPreload from "@/utils/categories";
 
 const CarritoProduct: React.FC<{
   removeFromCart: () => void;
@@ -41,30 +39,3 @@ const CarritoProduct: React.FC<{
 };
 
 export default CarritoProduct;
-
-{
-  /* <h2>{categoriesToPreload[categoryId].name}</h2>
-   */
-}
-/*   const handleDelete = () => {
-    removeFromCart();
-    // Llama a la función removeFromCart cuando se hace clic en el botón
-  }; */
-/*   <button
-            className=" w-6 bg-myred text-white hover:text-black rounded-full animate-pulse"
-            onClick={handleDelete}
-          >
-            X
-          </button> */
-/* interface CarritoProductProps extends IProduct {
-  removeFromCart: () => void; // Debes asegurarte de incluir removeFromCart en las props
-}
-
-const CarritoProduct: React.FC<CarritoProductProps> = ({
-  id,
-  name,
-  price,
-  description,
-  image,
-  removeFromCart,
-}) => { */

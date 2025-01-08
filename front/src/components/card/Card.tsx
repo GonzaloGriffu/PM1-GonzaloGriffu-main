@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import categoriesToPreload from "../../utils/categories";
 import { IProduct } from "@/types/types";
 
 const Card = ({
@@ -35,10 +34,5 @@ const Card = ({
 
 export default Card;
 
-/*       <p>{description}</p> */
-{
-}
-{
-  /* <p>Category: {categoriesToPreload[categoryId].name}</p>
-<p>Stock: {stock}</p> */
-}
+//muestra los productos de la pagina 
+

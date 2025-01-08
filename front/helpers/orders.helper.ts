@@ -1,6 +1,6 @@
 import { IProduct } from "@/types/types";
 
-const apiUrl = process.env.NEXT_PUBLIC_API_URL; // Reemplaza 'URL_DEL_BACKEND_AQUI' con la URL real de tu servicio backend
+const apiUrl = process.env.NEXT_PUBLIC_API_URL; 
 export async function crearOrders(products: number[], token: string) {
   try {
     const res = await fetch(`${apiUrl}/orders`, {
